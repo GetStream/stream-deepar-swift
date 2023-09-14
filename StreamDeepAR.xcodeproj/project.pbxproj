@@ -11,6 +11,10 @@
 		AC85FD162A9E44D90045D784 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85FD152A9E44D90045D784 /* ContentView.swift */; };
 		AC85FD182A9E44DB0045D784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC85FD172A9E44DB0045D784 /* Assets.xcassets */; };
 		AC85FD1B2A9E44DB0045D784 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC85FD1A2A9E44DB0045D784 /* Preview Assets.xcassets */; };
+		AC85FD232A9E46CF0045D784 /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = AC85FD222A9E46CF0045D784 /* StreamVideo */; };
+		AC85FD252A9E46CF0045D784 /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AC85FD242A9E46CF0045D784 /* StreamVideoSwiftUI */; };
+		ACF8E5CF2AB36033006ED26F /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8E5CE2AB36033006ED26F /* UserCredentials.swift */; };
+		ACF8E5D32AB36076006ED26F /* FiltersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8E5D22AB36076006ED26F /* FiltersService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,8 @@
 		AC85FD152A9E44D90045D784 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC85FD172A9E44DB0045D784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC85FD1A2A9E44DB0045D784 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACF8E5CE2AB36033006ED26F /* UserCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentials.swift; sourceTree = "<group>"; };
+		ACF8E5D22AB36076006ED26F /* FiltersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC85FD252A9E46CF0045D784 /* StreamVideoSwiftUI in Frameworks */,
+				AC85FD232A9E46CF0045D784 /* StreamVideo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				AC85FD132A9E44D90045D784 /* StreamDeepARApp.swift */,
-				AC85FD152A9E44D90045D784 /* ContentView.swift */,
+				ACF8E5CD2AB36026006ED26F /* Model */,
+				ACF8E5D02AB3605C006ED26F /* View */,
+				ACF8E5D12AB36066006ED26F /* ViewModel */,
 				AC85FD172A9E44DB0045D784 /* Assets.xcassets */,
 				AC85FD192A9E44DB0045D784 /* Preview Content */,
 			);
@@ -65,6 +75,30 @@
 				AC85FD1A2A9E44DB0045D784 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACF8E5CD2AB36026006ED26F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACF8E5CE2AB36033006ED26F /* UserCredentials.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACF8E5D02AB3605C006ED26F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC85FD152A9E44D90045D784 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACF8E5D12AB36066006ED26F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACF8E5D22AB36076006ED26F /* FiltersService.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +117,10 @@
 			dependencies = (
 			);
 			name = StreamDeepAR;
+			packageProductDependencies = (
+				AC85FD222A9E46CF0045D784 /* StreamVideo */,
+				AC85FD242A9E46CF0045D784 /* StreamVideoSwiftUI */,
+			);
 			productName = StreamDeepAR;
 			productReference = AC85FD102A9E44D90045D784 /* StreamDeepAR.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +149,9 @@
 				Base,
 			);
 			mainGroup = AC85FD072A9E44D90045D784;
+			packageReferences = (
+				AC85FD212A9E46CF0045D784 /* XCRemoteSwiftPackageReference "stream-video-swift" */,
+			);
 			productRefGroup = AC85FD112A9E44D90045D784 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +179,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC85FD162A9E44D90045D784 /* ContentView.swift in Sources */,
+				ACF8E5D32AB36076006ED26F /* FiltersService.swift in Sources */,
 				AC85FD142A9E44D90045D784 /* StreamDeepARApp.swift in Sources */,
+				ACF8E5CF2AB36033006ED26F /* UserCredentials.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +323,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stefanblos.StreamDeepAR;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanblos.stream-with-deepar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -309,7 +352,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stefanblos.StreamDeepAR;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefanblos.stream-with-deepar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,6 +382,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC85FD212A9E46CF0045D784 /* XCRemoteSwiftPackageReference "stream-video-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-video-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC85FD222A9E46CF0045D784 /* StreamVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC85FD212A9E46CF0045D784 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideo;
+		};
+		AC85FD242A9E46CF0045D784 /* StreamVideoSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC85FD212A9E46CF0045D784 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC85FD082A9E44D90045D784 /* Project object */;
 }
