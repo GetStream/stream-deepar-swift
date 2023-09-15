@@ -15,6 +15,7 @@
 		AC85FD252A9E46CF0045D784 /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AC85FD242A9E46CF0045D784 /* StreamVideoSwiftUI */; };
 		ACB143152AB3701A00451B10 /* FiltersService+DeepARDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB143142AB3701A00451B10 /* FiltersService+DeepARDelegate.swift */; };
 		ACB143182AB3704D00451B10 /* CIImage+toCVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB143172AB3704D00451B10 /* CIImage+toCVPixelBuffer.swift */; };
+		ACDFC8DB2AB45E1500ED8B98 /* DeepAR in Frameworks */ = {isa = PBXBuildFile; productRef = ACDFC8DA2AB45E1500ED8B98 /* DeepAR */; };
 		ACF8E5CF2AB36033006ED26F /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8E5CE2AB36033006ED26F /* UserCredentials.swift */; };
 		ACF8E5D32AB36076006ED26F /* FiltersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8E5D22AB36076006ED26F /* FiltersService.swift */; };
 		ACF8E5D52AB36302006ED26F /* FiltersPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8E5D42AB36301006ED26F /* FiltersPicker.swift */; };
@@ -42,6 +43,7 @@
 			files = (
 				AC85FD252A9E46CF0045D784 /* StreamVideoSwiftUI in Frameworks */,
 				AC85FD232A9E46CF0045D784 /* StreamVideo in Frameworks */,
+				ACDFC8DB2AB45E1500ED8B98 /* DeepAR in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +142,7 @@
 			packageProductDependencies = (
 				AC85FD222A9E46CF0045D784 /* StreamVideo */,
 				AC85FD242A9E46CF0045D784 /* StreamVideoSwiftUI */,
+				ACDFC8DA2AB45E1500ED8B98 /* DeepAR */,
 			);
 			productName = StreamDeepAR;
 			productReference = AC85FD102A9E44D90045D784 /* StreamDeepAR.app */;
@@ -171,6 +174,7 @@
 			mainGroup = AC85FD072A9E44D90045D784;
 			packageReferences = (
 				AC85FD212A9E46CF0045D784 /* XCRemoteSwiftPackageReference "stream-video-swift" */,
+				ACDFC8D92AB45E1500ED8B98 /* XCRemoteSwiftPackageReference "swift-deepar" */,
 			);
 			productRefGroup = AC85FD112A9E44D90045D784 /* Products */;
 			projectDirPath = "";
@@ -416,6 +420,14 @@
 				minimumVersion = 0.3.0;
 			};
 		};
+		ACDFC8D92AB45E1500ED8B98 /* XCRemoteSwiftPackageReference "swift-deepar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DeepARSDK/swift-deepar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -428,6 +440,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AC85FD212A9E46CF0045D784 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
 			productName = StreamVideoSwiftUI;
+		};
+		ACDFC8DA2AB45E1500ED8B98 /* DeepAR */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACDFC8D92AB45E1500ED8B98 /* XCRemoteSwiftPackageReference "swift-deepar" */;
+			productName = DeepAR;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
