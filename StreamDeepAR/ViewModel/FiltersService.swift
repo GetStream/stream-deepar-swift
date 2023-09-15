@@ -10,6 +10,7 @@ import StreamVideo
 import DeepAR
 import CoreImage
 
+@MainActor
 class FiltersService: NSObject, ObservableObject {
     
     @Published var filtersActive = false
