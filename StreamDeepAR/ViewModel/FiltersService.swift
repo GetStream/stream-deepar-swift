@@ -18,6 +18,8 @@ class FiltersService: NSObject, ObservableObject {
     private var deepAR: DeepAR!
     var deepARFilter: VideoFilter!
     
+    var currentProcessedImage: CIImage?
+    
     override init() {
         super.init()
         
@@ -43,8 +45,6 @@ class FiltersService: NSObject, ObservableObject {
                     withWidth: Int(rotatedImage.extent.width),
                     height: Int(rotatedImage.extent.height)
                 )
-                
-                print("[DeepAR]: renderingInitialized: \(self?.deepAR.renderingInitialized)")
                 
                 guard let path = self?.selectedEffect.path else {
                     print("[DeepAR]: Current effect has no path!")

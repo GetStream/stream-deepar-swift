@@ -30,4 +30,45 @@ enum Effect: String, CaseIterable {
     var path: String? {
         return Bundle.main.path(forResource: self.rawValue, ofType: "deepar")
     }
+    
+    var name: String {
+        switch self {
+        case .VikingHelmet:
+            return "Viking"
+        case .MakeupLook:
+            return "Makeup"
+        case .SplitViewLook:
+            return "Split View"
+        case .EmotionsExaggerator:
+            return "Emotions"
+        case .EmotionMeter:
+            return "Meter"
+        case .Stallone:
+            return "Stallone"
+        case .FlowerFace:
+            return "Flowers"
+        case .GalaxyBackground:
+            return "Galaxy"
+        case .Humanoid:
+            return "Humanoid"
+        case .NeonDevilHorns:
+            return "Horns"
+        case .PingPong:
+            return "PingPong"
+        case .PixelHearts:
+            return "Pixel Hearts"
+        case .Snail:
+            return "Snail"
+        case .Hope:
+            return "Hope"
+        case .VendettaMask:
+            return "Vendetta"
+        case .FireEffect:
+            return "Fire"
+        case .BurningEffect:
+            return "Burning"
+        case .ElephantTrunk:
+            return "Elephant"
+        }
+    }
 }

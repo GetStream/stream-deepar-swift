@@ -31,7 +31,7 @@ struct FiltersPicker: View {
             if filtersService.filtersActive {
                 Picker("Select a filter", selection: $filtersService.selectedEffect) {
                     ForEach(Effect.allCases, id: \.self) { effect in
-                        Text(effect.rawValue)
+                        Text(effect.name)
                     }
                 }
                 .pickerStyle(.menu)
