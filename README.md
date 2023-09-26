@@ -1,6 +1,6 @@
 # Adding Snapchat-Like Filters to a Stream Video App Using DeepAR
 
-![deepar-collab](https://github.com/GetStream/stream-deepar-swift/assets/12433593/9618af50-40be-4f54-bcb6-bd8029ac4ad1)
+![Adding Filters to a Stream Video App -1200x630px](https://github.com/GetStream/stream-deepar-swift/assets/12433593/255cbffb-32d5-42c9-b9b5-0d0cbebf38f2)
 
 Video calling apps are now essential for staying connected with loved ones and for businesses to boost productivity. To make video calls more engaging, adding popular video filters like those on Snapchat and TikTok can add creativity and a competitive edge by enhancing personal expression and attracting users.
 
